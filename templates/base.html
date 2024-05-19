@@ -24,11 +24,10 @@
   <body>
     {% include 'includes/header.html' %}
 
-    <p>This is ma base</p>
-
-    {% block content %} {% endblock content %} {% include 'includes/footer.html'
-    %}
-
+    <main>
+        {% block content %} {% endblock content %}
+    </main>
+    {% include 'includes/footer.html' %}
     <!-- Bootstrap scripts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
