@@ -10,24 +10,24 @@
 
     <!-- Bootstrap -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+    <link rel="stylesheet" href="{% static '/css/base.css' %}" />
 
-    {% block extra_css %}
-    {% endblock%}
+    {% block extra_css %} {% endblock%}
   </head>
   <body>
     {% include 'includes/header.html' %}
 
     <p>This is ma base</p>
 
-    {% block content %} {% endblock content %} {% include 'includes/footer.html' %}
+    {% block content %} {% endblock content %} {% include 'includes/footer.html'
+    %}
 
     <!-- Bootstrap scripts -->
     <script
@@ -36,7 +36,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
 
-      {% block extra_js %}
-      {% endblock%}
+    <!-- Custom JS -->
+    <script src="{% static 'base.js' %}"></script>
+
+    {% block extra_js %} {% endblock%}
   </body>
 </html>
