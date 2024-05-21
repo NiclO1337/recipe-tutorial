@@ -3,11 +3,13 @@
 {% load i18n %}
 {% block page-content %}
 
-    <section class="row justify-content-center m-0 mb-4">
-        <div class="bg-primary">
-            {% block allauth-pages %}
+    <section class="container" id="allauth-pages">
+        <div class="row">
+            <div class="col-6 mx-auto mt-5">
+            {% block content %}
 
-            {% endblock allauth-pages %}
+            {% endblock content %}
+            </div>
         </div>
     </section>
 

@@ -16,7 +16,7 @@
             </a>
         {% endsetvar %}
         {% element p %}
-            {% blocktranslate %}If you have not created an account yet, then please {{ link }}sign up or whatever{{ end_link }} first.{% endblocktranslate %}
+            {% blocktranslate %}If you have not created an account yet, then please {{ link }}sign up{{ end_link }} first.{% endblocktranslate %}
         {% endelement %}
         {% url 'account_login' as login_url %}
         {% element form form=form method="post" action=login_url tags="entrance,login" %}
@@ -42,7 +42,5 @@
             {% endelement %}
         {% endelement %}
     {% endif %}
-    {% if SOCIALACCOUNT_ENABLED %}
-        {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
-    {% endif %}
+
 {% endblock content %}
