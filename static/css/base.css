@@ -71,6 +71,21 @@ img.logo {
   border-radius: 5px;
 }
 
+#allauth-pages input {
+  display: block;
+  margin: 3px auto;
+}
+
+#allauth-pages input#id_remember {
+  display: inline-block;
+}
+
+#allauth-pages ul {
+  list-style-type: none;
+  font-size: 80%;
+  padding-left: 0;
+}
+
 
 
 /* Footer */
