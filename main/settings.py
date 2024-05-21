@@ -19,8 +19,6 @@ if os.path.exists('env.py'):
     import env
 
 
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -154,8 +152,9 @@ ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_USERNAME_MIN_LENGTH = 4
+
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT = '/'
+LOGIN_REDIRECT_URL = '/'
 
 
 
